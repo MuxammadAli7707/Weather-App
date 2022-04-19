@@ -109,6 +109,7 @@ body {
 @media screen and (max-width: 576px) {
   .weather__boxs {
     width: 310px;
+    overflow: hidden;
   }
   .weather__infobox {
     padding-left: 30px;
