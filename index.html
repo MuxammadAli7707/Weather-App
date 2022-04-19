@@ -5,14 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Weather World</title>
+  <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/weather-296-1100758.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
 
+  <div class="weather__inner">
+    <h2 class="weather__title">Weather App</h2>
+  </div>
+  <main>
+    <section class="weather">
+      <div class="container">
+        <div class="weather__main">
+          <div class="weather__boxs">
+            <form class="weather__form" action="" id="form">
+              <label class="weather__label" for="input">
+                <input class="weather__input" type="text" id="input" placeholder="Search">
+              </label>
+              <button class="weather__btn"><i class='bx bx-search'></i></button>
+            </form>
+
+            <div class="weather__infobox" id="listbox">
+              <!-- <p class="weather__city">Azerbaijan, Baku</p>
+              <p class="weather__temp">13°C</p>
+              <p class="weather__sunny">Sunny</p>
+              <p class="weather__humidity">Humidity: 40%</p>
+              <p class="weather__wind">Wind Speed: 13 km/h</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="js/main.js"></script>
 </body>
 

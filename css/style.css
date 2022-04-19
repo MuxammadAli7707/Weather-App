@@ -1,15 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap");
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: #fff;
+  background-color: #41295a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Rubik', sans-serif;
   min-height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
+
+.container {
+  /* width: 1200px;
+  max-width: 100%; */
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.weather__inner {
+  padding: 50px 0;
+}
+.weather__title {
+  color: #fff;
+  font-size: 40px;
+}
+
+.weather__main {
+  display: flex;
+  justify-content: center;
+}
+.weather__boxs {
+  width: 530px;
+  height: auto;
+  background: #314755;
+  background: linear-gradient(to right, #26a0da, #314755);  
+  border-radius: 50px;
+  padding: 30px 0;
+  z-index: 100;
+}
+
+.weather__form {
+  position: relative;
+  width: 80%;
+  background: linear-gradient(269.42deg, #F2FBFF -1.71%, rgba(242, 251, 255, 0.3) 100%);
+  opacity: 0.7;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.weather__input {
+  background: transparent;
+  border: none;
+  font-family: 'Poppins';
+  font-size: 18px;
+  color: #41295a;
+  padding: 12px 24px;
+}
+.weather__input::placeholder {
+  color: #41295a;
+}
+
+.weather__input:focus {
+  outline: none;
+  font-size: 18px;
+}
+
+.weather__btn {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #2f0743;
+  cursor: pointer;
+}
+
+.weather__infobox {
+  padding-top: 80px;
+  padding-left: 77px;
+}
+
+.weather__city, .weather__temp, .weather__sunny {
+  font-size: 46px;
+  color: #f2fbffb3;
+  margin-bottom: 11px;
+}
+
+.weather__sunny {
+  margin-bottom: 60px;
+}
+
+.weather__humidity, .weather__wind {
+  font-size: 34px;
+  color: #f2fbffb3;
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 576px) {
+  .weather__boxs {
+    width: 310px;
+  }
+  .weather__infobox {
+    padding-left: 30px;
+  }
+  .weather__humidity, .weather__wind {
+    font-size: 24px;
+  }
+
+  .weather__city, .weather__temp, .weather__sunny {
+    font-size: 35px;
+  }
+}
