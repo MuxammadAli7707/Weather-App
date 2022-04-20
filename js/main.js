@@ -40,7 +40,7 @@ function display(data){
     alert("Sorry this country is not found");
     elListBox.appendChild(error);
   } else {
-    let cloud = data.weather[0].main
+    let cloud = data.weather[0].main;
     pcity.className = 'weather__city';
     ptemp.className = 'weather__temp';
     pcloud.className = 'weather__sunny';
